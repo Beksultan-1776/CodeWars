@@ -47,3 +47,19 @@ String abbrevNameAnswer(String name) {
 }
 
 // ! 5
+String evenOrOdd(int number) => number.isEven ? "Even" : "Odd";
+
+// ! 6
+String smash(List<String> words) => words.join(" ");
+
+/*
+  Exercise 7.
+
+  Write a function that removes the spaces from the string, then return the resultant string.
+  Examples (Input -> Output): "Hello World !" -> "HelloWorld!"
+*/
+// ! Creates an intermediate list. Slower for large amounts of data
+String noSpace(String x) => x.split(" ").join("");
+
+// ? Best practice
+String noSpaceAnswer(String s) => s.replaceAll(" ", "");

@@ -7,7 +7,11 @@ void main(List<String> args) {
 
   // print(countPositivesSumNegatives(null));
 
-  print(abbrevName("Sam Harris"));
+  // print(abbrevName("Sam Harris"));
 
-  print("Some Name".indexOf("N"));
+  // print(evenOrOdd(24));
+
+  // print(smash(['hello', 'world', 'this', 'is', 'great']));
+
+  print(noSpace("Hello World ! Im Flutter developer !"));
 }
