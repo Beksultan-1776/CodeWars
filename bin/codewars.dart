@@ -1,9 +1,9 @@
-// ! 1
+// Exercise 1.
 String numberToString({required int number}) {
   return number.toString();
 }
 
-// ! 2
+// Exercise 2.
 bool average(List<int> points, int myPoint) {
   int sumPoints = 0;
 
@@ -14,7 +14,7 @@ bool average(List<int> points, int myPoint) {
   return (sumPoints / points.length).round() < myPoint;
 }
 
-// ! 3
+// Exercise 3.
 // ? Not recommended
 List<int> countPositivesSumNegatives(List<int>? array) {
   if (array == null || array.isEmpty) return [];
@@ -28,7 +28,7 @@ List<int> countPositivesSumNegatives(List<int>? array) {
   return [numbersLen, negativeNumSums];
 }
 
-// ! 4
+// Exercise 4.
 // ? Bad code
 String abbrevName(String name) {
   List<String> nameSplit = name.split(" ");
@@ -46,10 +46,10 @@ String abbrevNameAnswer(String name) {
   return "${name[0]}.${name[name.indexOf(" ") + 1]}".toUpperCase();
 }
 
-// ! 5
+// Exercise 5.
 String evenOrOdd(int number) => number.isEven ? "Even" : "Odd";
 
-// ! 6
+// Exercise 6.
 String smash(List<String> words) => words.join(" ");
 
 /*
