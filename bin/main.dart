@@ -5,5 +5,9 @@ void main(List<String> args) {
 
   // print(average([2, 3, 4, 4, 5, 2, 3, 4, 5], 5));
 
-  print(countPositivesSumNegatives(null));
+  // print(countPositivesSumNegatives(null));
+
+  print(abbrevName("Sam Harris"));
+
+  print("Some Name".indexOf("N"));
 }

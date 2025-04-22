@@ -15,10 +15,9 @@ bool average(List<int> points, int myPoint) {
 }
 
 // ! 3
+// ? Not recommended
 List<int> countPositivesSumNegatives(List<int>? array) {
-  if (array == null || array.isEmpty) {
-    return [];
-  }
+  if (array == null || array.isEmpty) return [];
 
   int numbersLen = 0;
   int negativeNumSums = 0;
@@ -30,3 +29,21 @@ List<int> countPositivesSumNegatives(List<int>? array) {
 }
 
 // ! 4
+// ? Bad code
+String abbrevName(String name) {
+  List<String> nameSplit = name.split(" ");
+  List<String> abbrevName = [];
+
+  for (var e in nameSplit) {
+    abbrevName.add(e[0].toUpperCase());
+  }
+
+  return abbrevName.join(".");
+}
+
+// ? Best practice
+String abbrevNameAnswer(String name) {
+  return "${name[0]}.${name[name.indexOf(" ") + 1]}".toUpperCase();
+}
+
+// ! 5
