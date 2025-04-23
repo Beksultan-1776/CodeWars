@@ -184,10 +184,50 @@ num oppositeAnswer(num n) => -n;
   longest(a, b) -> "abcdefxy"
 */
 
-void longest(String a, String b) {
-  String result = "";
-  List<String> firstList = a.split("");
-  List<String> secondList = b.split("");
-  print(firstList);
-  print(secondList);
+String longest(String a, String b) {
+  List<String> strings = (a + b).split("");
+  strings.sort();
+
+  return strings.toSet().join();
+}
+
+/*
+  Exercise 13.
+
+  You are given an odd-length array of integers, in which all of them are the
+  same, except for one single number. Complete the method which accepts such an
+  array, and returns that single different number. The input array will always
+  be valid! (odd-length >= 3)
+
+  Example:
+  findStray([1, 1, 2]) -> 2
+  findStray([5, 5, 5, 7, 5]) -> 7
+*/
+
+int stray(List<int> numbers) {
+  numbers.sort();
+  return numbers[0] == numbers[1] ? numbers.last : numbers[0];
+}
+
+/*
+  Exercise 14.
+
+  Your task is to make two functions ( max and min, or maximum and minimum, etc.
+  , depending on the language ) that receive a list of integers as input, and
+  return the largest and lowest number in that list, respectively. Each function
+  returns one number.
+
+  Example:
+  [4,6,2,1,9,63,-134,566]         -> max = 566, min = -134
+  [-52, 56, 30, 29, -54, 0, -110] -> min = -110, max = 56
+  [42, 54, 65, 87, 0]             -> min = 0, max = 87
+  [5]                             -> min = 5, max = 5
+*/
+
+int findMax(List<int> numbers) {
+  return numbers.reduce((a, b) => a > b ? a : b);
+}
+
+int findMin(List<int> numbers) {
+  return numbers.reduce((a, b) => a < b ? a : b);
 }
