@@ -13,5 +13,15 @@ void main(List<String> args) {
 
   // print(smash(['hello', 'world', 'this', 'is', 'great']));
 
-  print(noSpace("Hello World ! Im Flutter developer !"));
+  // print(noSpace("Hello World ! Im Flutter developer !"));
+
+  // print(summation(8));
+
+  // print(grow([1, 2, 3, 4]));
+
+  // print(repeatString(3, "Hello"));
+
+  // print(squareSum([1, 2, 2], 2));
+
+  // print(opposite(-2));
 }
